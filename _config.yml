@@ -1,0 +1,44 @@
+title: AIPickr
+description: "AI Tool Comparison & Review Hub for Professional Workflow Optimization."
+url: "https://[GITHUB_USERNAME].github.io/aipickr"
+baseurl: "" # the subpath of your site, e.g. /blog
+author: AIPickr Team
+
+# Google Analytics
+google_analytics: "G-XXXXXXXXXX"
+
+# Jekyll Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Collections / Sections
+collections:
+  best:
+    output: true
+    permalink: /best/:path/
+  vs:
+    output: true
+    permalink: /vs/:path/
+  alternatives:
+    output: true
+    permalink: /alternatives/:path/
+  reviews:
+    output: true
+    permalink: /reviews/:path/
+
+# Markdown Settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

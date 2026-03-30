@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post">
+  <nav class="breadcrumb">
+    <a href="/">Home</a> > <a href="/vs/">VS Comparisons</a>
+  </nav>
+
+  <h1>{{ page.title }}</h1>
+  
+  <div class="post-meta">
+    <span>Last updated: {{ page.date | date: "%B %d, %Y" }}</span>
+  </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <div class="related-posts">
+    <hr>
+    <h3>Related Comparisons</h3>
+    <ul>
+      {% for post in site.related_posts limit:3 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <aside class="sidebar-cta">
+    {% include affiliate-cta.html %}
+  </aside>
+</article>
